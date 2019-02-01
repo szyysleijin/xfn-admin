@@ -45,6 +45,17 @@ Vue.filter('currency',(val)=>{
   // 价格过滤器¥2.00
   return '¥'+val.toFixed(2)
 })
+
+Vue.filter('tablestatus',(val)=>{
+  if(val==1)
+    return '空闲'
+  else if (val==2) 
+    return '预定'
+  else if (val==3)
+    return '占用'
+  else 
+    return '其他'
+})
 new Vue({
   router,
   store,

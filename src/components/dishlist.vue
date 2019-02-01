@@ -1,6 +1,5 @@
 <template>
     <div>
-        main
-        <router-view/>
+        7
     </div>
 </template>
