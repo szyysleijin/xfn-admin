@@ -15,7 +15,7 @@ export default {
       var url = this.$store.state.globalSettings.apiUrl+`/admin/settings`
       this.axios(url).then(res=>{
           this.$store.commit('setGlobalSettings',res.data)
-          console.log(res.data)
+          // console.log(res.data)
       }).catch(err=>{
           console.log(err)
       })
